@@ -15,6 +15,9 @@ env:
 build:
   cache: true
   
+  cache_dir_list: 
+    - $SHIPPABLE_BUILD_DIR/shippable.yml
+  
   pre_ci:
     - docker build -t=shippabledocker/shiphitchcock1_sample_node .
 
@@ -35,6 +38,3 @@ integrations:
   hub:
     - integrationName: ship-docker
       type: docker
-      branches:
-        only:
-          - master
