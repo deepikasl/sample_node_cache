@@ -8,13 +8,13 @@ node_js:
 env:
   global:
     - FOO=FUBU
-    - BOO=TEST
+   # - BOO=TEST
 
   matrix:
     - M1=ONE
 
 build:
- # cache: true
+  cache: true
   
   #cache_dir_list: 
    # - $SHIPPABLE_BUILD_DIR/shippable.yml
