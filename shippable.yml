@@ -8,7 +8,7 @@ node_js:
 env:
   global:
     - FOO=FUBU
-   # - BOO=TEST
+    - BOO=TEST
 
   matrix:
     - M1=ONE
