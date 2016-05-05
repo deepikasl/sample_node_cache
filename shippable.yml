@@ -19,9 +19,11 @@ matrix:
     - node_js: "5.0"
       env:
         - key1=aaa
+        - secure: Mf4NoQU3j7cfWAU5TwXJvvFqWB67jgo+zU8VF99nwd3O1WLgoXn9G6F8WPqDpkg4FC9ly1EIe8jtxf59r5jFRzbPBK1dn5RP4NWj/g3VgrPGOQaExPpemQBVdogTSqoi4E67gPM6/QaTAAcDDabHMLxlluKLbHVSV+5YcBXuX7iGgkylhwKsz/CpOvfm4Cz+131tB2pKHAc8wHPkj/HfC0A/LZs4AzL8qdzHjQya4RXufcHcDdYGALA1Jq0VXTyWVG6bBBbT8vxlSbm+GZfYJBtQsknFEXEbT7ctBupSowLQ3aPXevkNC99JDPEISG0mafXfdjzdTQSyAs64ev+fuQ==
+        #-key2=bbb
 
 build:
-  cache: true
+  #cache: true
   
   #cache_dir_list: 
    # - $SHIPPABLE_BUILD_DIR/shippable.yml
