@@ -23,7 +23,7 @@ matrix:
         #-key2=bbb
 
 build:
- # cache: true
+  cache: true
   
   #cache_dir_list: 
    # - $SHIPPABLE_BUILD_DIR/shippable.yml
