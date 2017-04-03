@@ -23,13 +23,7 @@ matrix:
         #-key2=bbb
 
 build:
-  cache: true
-  
-  #cache_dir_list: 
-   # - $SHIPPABLE_BUILD_DIR/shippable.yml
-  
- # pre_ci:
-  #  - docker build -t=shippabledocker/shiphitchcock1_sample_node .
+  sendLogsInEmail: true
 
   pre_ci_boot:
     image_name: drydock/u12nod
