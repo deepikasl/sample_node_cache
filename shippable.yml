@@ -23,8 +23,6 @@ matrix:
         #-key2=bbb
 
 build:
-  sendLogsInEmail: true
-
   pre_ci_boot:
     image_name: drydock/u12nod
     image_tag: prod
@@ -44,5 +42,12 @@ integrations:
       type: docker
       branches:
         only:
-          - master    
+          - master
+   
+   - integrationName: email         
+      type: email        
+      recipients: 
+        - deepika@shippable.com
+      sendLogsInEmail: true
+      on_failure: always
   
